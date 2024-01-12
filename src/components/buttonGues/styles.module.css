@@ -1,0 +1,20 @@
+.buttonGues {
+  border: 1px solid #e75300;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  min-height: 35px;
+  font-size: 15px;
+  min-width: 25%;
+}
+
+.enabledButtonGues {
+  background-color: orange;
+  cursor: pointer;
+  color: green;
+}
+
+.disabledButtonGues {
+  background-color: #e75300;
+  cursor: not-allowed;
+  color: #e75300;
+}

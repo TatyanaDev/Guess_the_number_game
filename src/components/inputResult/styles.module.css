@@ -1,0 +1,26 @@
+.containerResult {
+  display: inline-block;
+  border-radius: 25px;
+  text-align: center;
+  min-width: 25%;
+  padding: 8px;
+}
+
+.invalidInput {
+  background-color: #ffc1ab;
+  color: red;
+}
+
+.validInput {
+  background-color: #a9ff77;
+  padding-top: 24px;
+  color: green;
+}
+
+.checkInputInfo {
+  font-size: 14px;
+}
+
+.validInputInfo {
+  font-size: 100px;
+}

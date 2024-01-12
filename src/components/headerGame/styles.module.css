@@ -1,0 +1,36 @@
+.lossOrWinnInfo {
+  margin-bottom: 10px;
+  max-width: 595px;
+  color: #e75300;
+  min-height: 60px;
+}
+
+.buttonGame {
+  border-radius: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.buttonStartGame {
+  background-color: #a9ff77;
+  border: 1px solid green;
+  color: green;
+}
+
+.buttonEndAttemptsContainer {
+  justify-content: space-between;
+  min-height: 30px;
+  display: flex;
+}
+
+.buttonEndGame {
+  background-color: #ffc1ab;
+  border: 1px solid red;
+  color: red;
+}
+
+.attemptsLeftInfo {
+  margin-top: 5px;
+  color: #e75300;
+}
