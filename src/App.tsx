@@ -1,7 +1,7 @@
-import GuesTheNumberGame from './pages/gueseTheNumberGame'
+import GuessTheNumberGame from './page/guessTheNumberGame'
 
 export default function App (): JSX.Element {
   return (
-    <GuesTheNumberGame />
+    <GuessTheNumberGame />
   )
 }

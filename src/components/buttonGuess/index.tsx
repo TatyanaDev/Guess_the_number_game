@@ -1,18 +1,18 @@
 import style from './styles.module.css'
 
-interface PropsButtonGues {
+interface PropsButtonGuess {
   isDisabledInput: boolean
   helperInput: () => void
 }
 
-export default function ButtonGues (props: PropsButtonGues): JSX.Element {
+export default function ButtonGuess (props: PropsButtonGuess): JSX.Element {
   const { isDisabledInput, helperInput } = props
 
   return (
     <button
-      className={`${style.buttonGues} ${isDisabledInput ? style.disabledButtonGues : style.enabledButtonGues}`}
+      className={`${style.buttonGuess} ${isDisabledInput ? style.disabledButtonGuess : style.enabledButtonGuess}`}
       disabled={isDisabledInput}
-      data-testid='buttonGues'
+      data-testid='buttonGuess'
       onClick={helperInput}
     >Guess it</button>
   )

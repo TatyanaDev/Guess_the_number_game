@@ -1,4 +1,4 @@
-.buttonGues {
+.buttonGuess {
   border: 1px solid #e75300;
   margin-bottom: 10px;
   border-radius: 20px;
@@ -7,13 +7,13 @@
   min-width: 25%;
 }
 
-.enabledButtonGues {
+.enabledButtonGuess {
   background-color: orange;
   cursor: pointer;
   color: green;
 }
 
-.disabledButtonGues {
+.disabledButtonGuess {
   background-color: #e75300;
   cursor: not-allowed;
   color: #e75300;

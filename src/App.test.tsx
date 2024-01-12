@@ -39,7 +39,7 @@ test('Application renders 4 buttons', () => {
     </Provider>
   )
 
-  expect(screen.getAllByTestId('buttonGues').length).toBe(4)
+  expect(screen.getAllByTestId('buttonGuess').length).toBe(4)
 })
 
 test('After starting the application, the number of attempts is displayed', () => {

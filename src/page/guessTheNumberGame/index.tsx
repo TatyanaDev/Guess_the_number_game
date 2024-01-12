@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux'
-import HeaderGame from '../../components/headerGame'
-import ButtonGues from '../../components/buttonGues'
-import InputGame from '../../components/inputGame'
 import InputResult from '../../components/inputResult'
+import ButtonGuess from '../../components/buttonGuess'
+import HeaderGame from '../../components/headerGame'
+import InputGame from '../../components/inputGame'
 import {
   getFirstNumber,
   getFourthNumber,
@@ -30,7 +30,7 @@ import {
   getCheckSecondInput,
   getCheckThirdInput,
   getCheckFourthInput
-} from './../../store/selectors'
+} from '../../store/selectors'
 import {
   setIsValueFirstInput,
   setIsValueSecondInput,
@@ -57,10 +57,10 @@ import {
   setCheckSecondInput,
   setCheckThirdInput,
   setCheckFourthInput
-} from './../../store/slices'
+} from '../../store/slices'
 import style from './styles.module.css'
 
-export default function GuesTheNumberGame (): JSX.Element {
+export default function GuessTheNumberGame (): JSX.Element {
   const firstNumber = useSelector(getFirstNumber)
   const secondNumber = useSelector(getSecondNumber)
   const thirdNumber = useSelector(getThirdNumber)
@@ -193,13 +193,13 @@ export default function GuesTheNumberGame (): JSX.Element {
         <HeaderGame />
         <div>
           <div>
-            <ButtonGues isDisabledInput={isDisabledFirstInput} helperInput={helperFirstInput} />
+            <ButtonGuess isDisabledInput={isDisabledFirstInput} helperInput={helperFirstInput} />
 
-            <ButtonGues isDisabledInput={isDisabledSecondInput} helperInput={helperSecondInput} />
+            <ButtonGuess isDisabledInput={isDisabledSecondInput} helperInput={helperSecondInput} />
 
-            <ButtonGues isDisabledInput={isDisabledThirdInput} helperInput={helperThirdInput} />
+            <ButtonGuess isDisabledInput={isDisabledThirdInput} helperInput={helperThirdInput} />
 
-            <ButtonGues isDisabledInput={isDisabledFourthInput} helperInput={helperFourthInput} />
+            <ButtonGuess isDisabledInput={isDisabledFourthInput} helperInput={helperFourthInput} />
           </div>
           <div>
             <InputGame setIsValueInput={setIsValueFirstInput} isDisabledInput={isDisabledFirstInput} isValueInput={isValueFirstInput} />

@@ -115,19 +115,7 @@ export default function HeaderGame (): JSX.Element {
 
   return (
     <>
-      {isWinn
-        ? <Confetti
-          width={window.screen.width}
-          height={window.screen.height}
-        />
-        : isLoss
-          ? <Confetti
-            width={window.screen.width}
-            height={window.screen.height}
-            colors={['red']}
-          />
-          : null
-      }
+      {isWinn ? <Confetti /> : isLoss ? <Confetti colors={['red']} /> : null}
 
       <h2 className={style.lossOrWinnInfo}>{isLoss ? 'You lost! You can restart the game' : isWinn ? 'You have won! Congratulations on your victory! You can restart the game' : null}</h2>
 
